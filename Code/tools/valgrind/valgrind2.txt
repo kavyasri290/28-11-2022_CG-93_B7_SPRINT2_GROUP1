@@ -1,0 +1,19 @@
+==1997385== Memcheck, a memory error detector
+==1997385== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1997385== Using Valgrind-3.16.1 and LibVEX; rerun with -h for copyright info
+==1997385== Command: bin/sfinal
+==1997385== 
+==1997385== 
+==1997385== Process terminating with default action of signal 2 (SIGINT)
+==1997385==    at 0x485E183: accept (accept.c:26)
+==1997385==    by 0x10CA43: TcpServer::acceptClient() (sch_server.cpp:131)
+==1997385==    by 0x1110B1: main (sch_server_main.cpp:21)
+==1997385== 
+==1997385== HEAP SUMMARY:
+==1997385==     in use at exit: 0 bytes in 0 blocks
+==1997385==   total heap usage: 1 allocs, 1 frees, 72,704 bytes allocated
+==1997385== 
+==1997385== All heap blocks were freed -- no leaks are possible
+==1997385== 
+==1997385== For lists of detected and suppressed errors, rerun with: -s
+==1997385== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
